@@ -1,10 +1,18 @@
-<!DOCTYPE html>
+style this form better <!DOCTYPE html>
 <html>
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body style="border:black solid 4px; border-radius: 8px; ">
+    <form method="POST" action="/new">
+      <h1>Let's chat annonymously</h1>
+      <input type="text" name="author" placeholder="pseudonymous" style="margin-bottom: 4px;">
+      <br>
+      <input type="text" name="text" placeholder="Tell us something" style="margin-bottom:4px">
+      <br>
+      <input type="submit" value="Submit">
+  </form>
     <% messages.forEach(function(message){%>
       <div>
       <p>User:<%=message.user %></p>
