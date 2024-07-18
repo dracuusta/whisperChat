@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body style="border:black solid 4px; border-radius: 8px; ">
+    <% messages.forEach(function(message){%>
+      <div>
+      <p>User:<%=message.user %></p>
+      <p>Message:<%=message.text %></p>
+      <p>Date:<%=message.added %></p>
+      <hr>
+    </div>
+    <% }) %>
+  </body>
+</html>
