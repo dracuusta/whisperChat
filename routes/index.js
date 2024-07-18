@@ -11,6 +11,16 @@ const messages = [
     text: "Let's Check",
     user: "idk",
     added: new Date()
+  },
+  {
+    text: "Let's Check this out",
+    user: "12rat",
+    added: new Date()
+  },
+  {
+    text: "One two three",
+    user: "fsdf",
+    added: new Date()
   }
 ];
 
